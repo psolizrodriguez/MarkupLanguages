@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mom And Me</title>
+<script src="scripts/jquery-3.1.1.js"></script>
+<link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+<script src="scripts/weeks.js"></script>
+<link rel="stylesheet" href="styles/weeks.css">
+<script src="scripts/ajaxFlickr.js"></script>
+</head>
+<body>
+	<div id="editCommentForm" title="Edit My Comment" style="display: none">
+		<label>My Notes : </label>
+		<textarea id="myNotes"></textarea>
+	</div>
+	<div id="showImage" title="" style="display: none">
+		<div id="imageContainer"></div>
+	</div>
+	<div id="nutritionalNeeds" title="Nutritional Needs" style="display: none">
+		<div id="nutritionalNeedsContainer">
+			<div id="nutritionalNeedsContainer" class="nutritionalNeedsContainer">
+				<input type="hidden" id="selectedWeek" value="0" />
+				<section class="controlsNutritional"></section>
+				<section id="classNutritionalNeeds" class="note-output">
+					<p id="protein" class="flex-item proteins" onclick="loadNutritionalInfo('protein')">protein</p>
+					<p id="fat" class="flex-item fats" onclick="loadNutritionalInfo('fat')">fat</p>
+					<p id="vegetable" class="flex-item vegetables" onclick="loadNutritionalInfo('vegetable')">vegetable</p>
+					<p id="calcium" class="flex-item calcium" onclick="loadNutritionalInfo('calcium')">calcium</p>
+				</section>
+				<section class="bottomNutritional"></section>
+			</div>
+		</div>
+	</div>
+	<header>
+		<!-- <h1>Mom And Me</h1> -->
+	</header>
+	<nav>
+		<a href="listChildren.html">My Kids</a>
+		|
+		<a href="listWeeks.html">My Weeks</a>
+		|
+		<a href="listSymptoms.html">Symptoms</a>
+		|
+		<a href="listNames.html">Baby Names</a>
+	</nav>
+	<main>
+	<section class="title">My Calendar!</section>
+	<section class="mainform">
+		<section class="controls"></section>
+		<section id="contentChildren" class="note-output">
+			<div id="accordionWeeks"></div>
+		</section>
+		<section class="bottom"></section>
+	</section>
+	</main>
+	<footer>Copyright 2016 Developed by INTERNATIONAL Team</footer>
+</body>
+</html>

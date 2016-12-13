@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mom And Me</title>
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/grid.css">
+<link rel="stylesheet" href="styles/symptoms.css">
+<script src="scripts/jquery-3.1.1.js"></script>
+<link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+<script src="scripts/symptoms.js"></script>
+</head>
+<body>
+	<header>
+		<!-- <h1>Mom And Me</h1> -->
+	</header>
+	<nav>
+		<a href="listChildren.html">My Kids</a>
+		|
+		<a href="listWeeks.html">My Weeks</a>
+		|
+		<a href="listSymptoms.html">Symptoms</a>
+		|
+		<a href="listNames.html">Baby Names</a>
+	</nav>
+	<nav>
+		<a href="javascript:refreshListSymptoms('A')">A</a>
+		|
+		<a href="javascript:refreshListSymptoms('B')">B</a>
+		|
+		<a href="javascript:refreshListSymptoms('C')">C</a>
+		|
+		<a href="javascript:refreshListSymptoms('D')">D</a>
+		|
+		<a href="javascript:refreshListSymptoms('E')">E</a>
+		|
+		<a href="javascript:refreshListSymptoms('F')">F</a>
+	</nav>
+	<main>
+	<section class="title">Symptoms</section>
+	<section class="mainform">
+		<section class="controls">
+			<img id="backButton" src="../media/images/back.JPG" onclick="goBackToList()" style="display: none" align="right"></img>
+		</section>
+		<section id="contentChildren" class="note-output"></section>
+		<section id="catalogContent" class="content-output" style="display: none">
+			<article>
+				<h1 id="symptomsTitle"></h1>
+				<div id="imageContent">
+				</div>
+				<div id="symptomContent"></div>
+			</article>
+		</section>
+		<section class="bottom"></section>
+	</section>
+	</main>
+	<footer>Copyright 2016 Developed by INTERNATIONAL Team</footer>
+</body>
+</html>
